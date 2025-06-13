@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="./welc.html" method="get">
+        <center>
+            <h2>Register Form</h2>
+<tbody>
+            <table style="background-color: aqua;" height="400px">
+
+                <tr>
+                    <td><label for="name">Name:</label></td>
+                    <td> <input type="text" id="name" name="name" required></td><br>
+                </tr>
+
+                <tr>
+                    <td><label for="name">UserName:</label></td>
+                    <td> <input type="email" id="name" name="name" pattern="[a-z0-9!@#$%^&*]+@gmail.com"
+                            title="Must end with @gmail.com" required></td><br>
+                </tr>
+
+                <tr>
+                    <td> <label for="Pswd"> New Password:</label></td>
+                    <td><input type="password" id="Pswd" name="Pswd" minlength="6" maxlength="12"
+                            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*]).{8,16}"
+                            title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+                            required></td> <br>
+                </tr>
+                <tr>
+                    <td> <label for="Pswd"> Confirm Password:</label></td>
+                    <td><input type="password" name="Pswd" id="Pswd" minlength="6" maxlength="12"
+                            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*]).{8,16}"
+                            title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters""   required></td> <br>
+</tr>
+           <tr>
+            <td><label for="phno">Mobile No:</label></td>
+            <td><input type="text" id="phno" name="phno" pattern="[6-9][0-9]{9}"  title="Enter 10digit mobile number" required> </td>
+           </tr>
+
+  <tr>
+          <td><label for="DOB">Date of Birth*</label></td>
+          <td><input type="Date" id="DOB" name="DOB" required></td>
+  </tr>
+  <tr>
+           <td><label for="">Gender*</label></td>
+         <td> <input type="radio" id="male" name="Gender" value="Male">
+          <label for="male">Male</label>
+          <input type="radio" id="Female" name="Gender" value="Female">
+          <label for="Female">Female</label>
+        </td>
+        </tr>
+
+ </table>
+ </tbody>
+            <input type="Submit" value="Submit">
+
+        </center>
+    </form>
+</body>
+
+</html>
